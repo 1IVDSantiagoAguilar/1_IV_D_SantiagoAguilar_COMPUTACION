@@ -1,0 +1,30 @@
+JOptionPane.showMessageDialog(null,
+                "La palabra de paso no es correcta: ",
+                "Error",    
+        JOptionPane.ERROR_MESSAGE);
+1
+JOptionPane.showConfirmDialog(null,
+                "¿Desea continuar?",
+                "Confirmacion",
+                JOptionPane.YES_NO_OPTION);
+2
+String clave = JOptionPane.showInputDialog(
+        "Palabra de paso: ");
+        if (clave.equals("Pablo")) {
+    JOptionPane.showMessageDialog(null, "Hola "+clave+ "Bienvenido");
+    } else {
+    JOptionPane.showMessageDialog(null, "Clave incorrecta");
+3
+ Object[] opciones = {"Sí, gracias",
+                     "No, gracias",
+                     "Más..."};
+
+int s = javax.swing.JOptionPane.showOptionDialog(this,
+        "¿Se ha solucionado el problema?",
+        "Soluciones",
+        javax.swing.JOptionPane.YES_NO_CANCEL_OPTION,
+        javax.swing.JOptionPane.QUESTION_MESSAGE,
+        null,
+        opciones,
+        opciones[2]);
+4
